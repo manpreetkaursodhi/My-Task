@@ -120,8 +120,8 @@ function Form() {
           <div className="xl:w-[300px] xl:h-full xl:bg-white bg-no-repeat bg-cover xl:rounded-xl sm:w-full sm:min-h-56 sm:mr-[0px] sm:relative sm:z-2 xl:bg-xl-image sm:bg-sm-image">
             <ul className="flex xl:flex-col list-none xl:p-4 mt-4 sm:w-full sm:justify-center">
               {steps.filter(step => step.id !== 5).map(step => (
-                <li key={step.id} className="flex items-center min-w-[144px] mb-4 p-2 sm:flex-row">
-                  <div className={`min-w-8 h-8 sm:w-12 sm:h-12 sm:space-between flex items-center justify-center rounded-full text-sm font-UbuntuBold font-bold ${currentStep === step.id || (step.id === 4 && currentStep === 5) ? 'bg-light-blue text-marine-blue' : 'bg-none-100 border-solid border-[1px] border-white text-white'}`}>
+                <li key={step.id} className="flex items-center xl:min-w-[144px] mb-4 p-2 sm:flex-row">
+                  <div className={`xl:min-w-8 h-8 sm:w-12 sm:h-12 sm:space-between flex items-center justify-center rounded-full text-sm font-UbuntuBold font-bold ${currentStep === step.id || (step.id === 4 && currentStep === 5) ? 'bg-light-blue text-marine-blue' : 'bg-none-100 border-solid border-[1px] border-white text-white'}`}>
                     {step.id}
                   </div>
                   <span className="ml-3 text-sm text-white tracking-widest font-UbuntuMedium sm:hidden xl:block">
