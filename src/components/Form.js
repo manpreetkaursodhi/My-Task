@@ -241,7 +241,8 @@ function Form() {
             )}
 
             {currentStep === 5 && (
-              <div className="flex flex-col items-center justify-center h-3/4 text-center">
+              <div className="xl:min-h-[446px] sm:max-h-[415px]">
+              <div className="flex flex-col items-center justify-center text-center">
                 <div className="flex flex-col items-center justify-center w-full">
                   <img className="w-20 h-20 text-red-500 mb-6" src={tickIcon} alt="done"/>
                   <h1 className="text-3xl font-UbuntuBold text-marine-blue mt-4 mb-4">Thank You!</h1>
@@ -251,10 +252,11 @@ function Form() {
                   </p>
                 </div>
               </div>
+                      </div>
             )}
             
             <div className="w-full">
-              {currentStep === 4 ? <button className="float-right sm:ml-[27px] xl:mt-[6rem] sm:mt-[30px] xl:ml-0 px-8 py-4 font-UbuntuRegular bg-purplish-blue rounded-md text-white" onClick={handleNextStep} disabled={isNextDisabled()}>Confirm</button>
+              {currentStep === 4 ? <button className="float-right sm:ml-[27px] xl:mt-[6rem] sm:mt-[25px] xl:ml-0 px-8 py-4 font-UbuntuRegular bg-purplish-blue rounded-md text-white" onClick={handleNextStep} disabled={isNextDisabled()}>Confirm</button>
                 : currentStep === 1 || currentStep === 2 || currentStep === 3 ? <button className="float-right sm:ml-[27px] sm:mt-[25px] xl:mt-[6rem] xl:ml-0 px-8 py-4 font-UbuntuRegular bg-marine-blue rounded-md text-white" onClick={handleNextStep} disabled={isNextDisabled()}>Next Step</button> : ""}
             </div>
             {currentStep > 1 && currentStep < 5 && (
