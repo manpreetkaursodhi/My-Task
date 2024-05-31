@@ -259,7 +259,7 @@ function Form() {
             </div>
             {currentStep > 1 && currentStep < 5 && (
               <div className="w-full">
-                <button className="float-left sm:ml-[20px] xl:mt-[6rem] sm:mt-[23rem] xl:ml-0 font-bold text-cool-gray hover:text-marine-blue" onClick={handlePrevStep}>Go Back</button>
+                <button className="float-left sm:ml-[20px] xl:mt-[6rem] sm:mt-[3rem] xl:ml-0 font-bold text-cool-gray hover:text-marine-blue" onClick={handlePrevStep}>Go Back</button>
               </div>
             )}
           </div>
