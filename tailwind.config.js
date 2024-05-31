@@ -8,8 +8,8 @@ module.exports = {
       'sm': '375px',
       // => @media (min-width: 375px) { ... }
 
-      'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
+      'xl': '960px',
+      // => @media (min-width: 960px) { ... }
     },
     extend: {
       backgroundImage: {
