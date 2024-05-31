@@ -243,7 +243,7 @@ function Form() {
             {currentStep === 5 && (
               <div className="flex flex-col items-center justify-center h-3/4 text-center">
                 <div className="flex flex-col items-center justify-center w-full">
-                  <img className="w-20 h-20 text-red-500 mb-6" src={tickIcon} />
+                  <img className="w-20 h-20 text-red-500 mb-6" src={tickIcon} alt="done"/>
                   <h1 className="text-3xl font-UbuntuBold text-marine-blue mt-4 mb-4">Thank You!</h1>
                   <p className="text-xl text-cool-gray font-UbuntuMedium">
                     Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel
