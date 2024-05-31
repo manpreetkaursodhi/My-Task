@@ -133,24 +133,24 @@ function Form() {
             </ul>
           </div>
 
-          <div className="xl:relative xl:h-full xl:ml-6 xl:w-[70%] sm:absolute xl:top-0 top-[130px] z-2 xl:py-8 xl:px-14 sm:w-[360px] sm:h-[550px] sm:p-[30px] sm:rounded-xl sm:bg-white" style={{ cursor: 'pointer' }}>
+          <div className="xl:relative xl:h-full xl:ml-6 xl:w-[70%] sm:absolute xl:top-0 top-[130px] z-2 xl:py-8 xl:px-14 sm:w-[360px] sm:h-[410px] sm:p-[30px] sm:rounded-xl sm:bg-white" style={{ cursor: 'pointer' }}>
             {currentStep === 1 && (
-              <div className="xl:min-h-[446px] sm:max-h-[415px]">
+              <div className="xl:min-h-[446px] sm:max-h-[415px] sm:mt-[-13px]">
                 <h1 className="text-3xl mt-4 mb-2 text-marine-blue font-UbuntuBold">Personal info</h1>
                 <p className="text-md mb-6 text-cool-gray font-UbuntuMedium">Please provide your name, email address, and phone number.</p>
                 <div className="my-4">
                   <label className="text-marine-blue font-UbuntuBold">Name</label>
-                  <input className={`w-full p-4 border text-marine-blue font-UbuntuMedium rounded-lg ${errors.name ? 'border-strawberry-red' : 'border-gray-300'}`} type="text" name="name" placeholder="e.g. Stephen King" value={formData.name} onChange={handleChange} />
+                  <input className={`w-full p-[0.5rem] border text-marine-blue font-UbuntuMedium rounded-lg ${errors.name ? 'border-strawberry-red' : 'border-gray-300'}`} type="text" name="name" placeholder="e.g. Stephen King" value={formData.name} onChange={handleChange} />
                   {errors.name && <p className="text-red-500 text-right font-UbuntuMedium">This field is required</p>}
                 </div>
                 <div className="my-4">
                   <label className="text-marine-blue font-UbuntuBold">Email Address</label>
-                  <input className={`w-full p-4 border text-marine-blue font-UbuntuMedium rounded-lg ${errors.name ? 'border-strawberry-red' : 'border-gray-300'}`} type="email" name="email" placeholder="e.g. stephenking@lorem.com" value={formData.email} onChange={handleChange} />
+                  <input className={`w-full p-[0.5rem] border text-marine-blue font-UbuntuMedium rounded-lg ${errors.name ? 'border-strawberry-red' : 'border-gray-300'}`} type="email" name="email" placeholder="e.g. stephenking@lorem.com" value={formData.email} onChange={handleChange} />
                   {errors.email && <p className="text-red-500 text-right font-UbuntuMedium">This field is required</p>}
                 </div>
                 <div className="my-4">
                   <label className="text-marine-blue font-UbuntuBold">Phone Number</label>
-                  <input className={`w-full p-4 border text-marine-blue font-UbuntuMedium rounded-lg ${errors.name ? 'border-strawberry-red' : 'border-gray-300'}`} type="text" name="phone" placeholder="e.g. +1 234 567 890" value={formData.phone} onChange={handleChange} />
+                  <input className={`w-full p-[0.5rem] border text-marine-blue font-UbuntuMedium rounded-lg ${errors.name ? 'border-strawberry-red' : 'border-gray-300'}`} type="text" name="phone" placeholder="e.g. +1 234 567 890" value={formData.phone} onChange={handleChange} />
                   {errors.phone && <p className="text-red-500 text-right font-UbuntuMedium">This field is required</p>}
                 </div>
 
@@ -158,21 +158,21 @@ function Form() {
             )}
 
             {currentStep === 2 && (
-              <div className="xl:min-h-[446px] sm:max-h-[415px]">
+              <div className="xl:min-h-[446px] sm:max-h-[415px] sm:mt-[-13px]">
                 <h1 className="text-3xl mt-4 mb-2 text-marine-blue font-UbuntuBold">Select your plan</h1>
                 <p className="text-md mb-6 text-cool-gray font-UbuntuMedium">You have the option of monthly or yearly billing.</p>
-                <div className="flex mt-14 sm:mt-10 xl:gap-x-4 sm:mb-2 sm:flex-col xl:flex-row xl:w-full">
+                <div className="flex mt-14 sm:mt-[-0.5rem] xl:gap-x-4 sm:mb-2 sm:flex-col xl:flex-row xl:w-full">
                   {plans[billingCycle].map(plan => (
-                    <div key={plan.id} className={`sm:flex xl:py-10 xl:w-[272px] xl:block sm:inline sm:h-[92px] xl:h-[200px] sm:w-full sm:mb-2 sm:text-left border-solid border-[1px] ${selectedPlan === plan.id ? 'border-marine-blue' : 'border-light-gray'} rounded-lg bg-white text-align-left`} onClick={() => setSelectedPlan(plan.id)}>
+                    <div key={plan.id} className={`sm:flex xl:py-10 xl:w-[272px] xl:block sm:inline sm:h-[80px] xl:h-[200px] sm:w-full sm:mb-2 sm:text-left border-solid border-[1px] ${selectedPlan === plan.id ? 'border-marine-blue' : 'border-light-gray'} rounded-lg bg-white text-align-left`} onClick={() => setSelectedPlan(plan.id)}>
                       <img src={plan.icon} alt={`${plan.title} icon`} className="xl:h-12 sm:h-10 sm:mt-6 sm:ml-6 xl:relative xl:float-left xl:-mt-4 xl:mb-2 sm:inline" />
-                      <div className="sm:ml-6  sm:mb-12 xl:ml-4 xl:mt-24 xl:text-left sm:text-left">
-                        <h2 className="text-lg text-marine-blue mt-6 ml-2 font-UbuntuBold">{plan.title}</h2>
+                      <div className="sm:ml-6 sm:mb-12 xl:ml-4 xl:mt-24 xl:text-left sm:text-left">
+                        <h2 className="text-lg text-marine-blue mt-[0.9rem] ml-2 font-UbuntuBold">{plan.title}</h2>
                         <p className="text-cool-gray ml-2 -mb-8 font-UbuntuMedium">{plan.price}</p>
                       </div>
                     </div>
                   ))}
                 </div>
-                <div className="flex xl:items-center xl:w-full xl:h-16 py-2 sm:-mt-2 rounded-xl xl:justify-center sm:justify-center xl:mt-8 bg-alabaster">
+                <div className="flex xl:items-center xl:w-full xl:h-16 py-2 sm:mt-[1.5rem] rounded-xl xl:justify-center sm:justify-center xl:mt-8 bg-alabaster">
                   <span className={`mr-2 font-UbuntuBold ${billingCycle === 'monthly' ? 'text-marine-blue' : 'text-cool-gray'}`}>Monthly</span>
                   <label className="switch">
                     <input type="checkbox" checked={billingCycle === 'yearly'} onChange={toggleBillingCycle} />
@@ -185,17 +185,17 @@ function Form() {
             )}
 
             {currentStep === 3 && (
-              <div className="xl:min-h-[446px] sm:max-h-[415px]">
+              <div className="xl:min-h-[446px] sm:max-h-[415px] sm:mt-[-13px]">
                 <h1 className="text-3xl mt-4 mb-2 text-marine-blue font-UbuntuBold">Pick add-ons</h1>
                 <p className="text-md mb-6 text-cool-gray font-UbuntuMedium">Add-ons help enhance your gaming experience.</p>
-                <div className="flex flex-col space-y-4">
+                <div className="flex flex-col space-y-4 sm:mt-[-19px]">
                   {addonDetails[billingCycle].map(addon => (
-                    <div key={addon.id} className={`flex items-center justify-between p-4 border ${addons[addon.id] ? 'border-marine-blue' : 'border-light-gray'} rounded-lg`}>
+                    <div key={addon.id} className={`flex items-center justify-between p-[0.3rem] border ${addons[addon.id] ? 'border-marine-blue' : 'border-light-gray'} rounded-lg`}>
                       <label className="flex items-center">
                         <input type="checkbox" checked={addons[addon.id]} onChange={() => handleCheckboxChange(addon.id)} className="mr-4 h-[18px] w-[18px]" />
                         <span>
                           <span className="block text-marine-blue font-UbuntuBold">{addon.title}</span>
-                          <span className="block text-cool-gray font-UbuntuMedium">{addon.description}</span>
+                          <span className="block text-[15px] text-cool-gray font-UbuntuMedium">{addon.description}</span>
                         </span>
                       </label>
                       <span className="text-purplish-blue font-UbuntuMedium">{addon.price}</span>
@@ -207,7 +207,7 @@ function Form() {
             )}
 
             {currentStep === 4 && (
-              <div className="xl:min-h-[446px] sm:max-h-[415px]">
+              <div className="xl:min-h-[446px] sm:max-h-[415px] sm:mt-[-13px]">
                 <div className="text-3xl mt-4 mb-2 text-marine-blue font-UbuntuBold">Finishing Up</div>
                 <p className="text-md mb-6 text-cool-gray font-UbuntuMedium">Double-check everything looks OK before confirming.</p>
                 <div className="p-6 bg-alabaster rounded-lg">
@@ -241,8 +241,8 @@ function Form() {
             )}
 
             {currentStep === 5 && (
-              <div className="xl:min-h-[446px] sm:max-h-[415px]">
-              <div className="flex flex-col items-center justify-center text-center">
+              <div className="xl:min-h-[446px] sm:max-h-[415px] sm:mt-[-13px]">
+              <div className="flex flex-col items-center justify-center text-center sm:mt-[60px] xl:mt-[200px]">
                 <div className="flex flex-col items-center justify-center w-full">
                   <img className="w-20 h-20 text-red-500 mb-6" src={tickIcon} alt="done"/>
                   <h1 className="text-3xl font-UbuntuBold text-marine-blue mt-4 mb-4">Thank You!</h1>
