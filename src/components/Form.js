@@ -116,7 +116,7 @@ function Form() {
   return (
     <div className="sm:bg-white">
       <div className="flex xl:my-auto xl:items-center xl:justify-center xl:h-screen sm:min-h-20 bg-magnolia">
-        <div className="flex xl:flex-row xl:w-3/5 xl:h-3/4 sm:h-[90%] sm:top-0 sm:fixed sm:bottom-[80px] xl:mt-24 sm:w-full xl:p-4 rounded-xl xl:bg-white sm:flex-col sm:bg-magnolia items-center">
+        <div className="flex xl:flex-row xl:w-3/5 xl:h-3/4 sm:h-[60%] sm:top-0 sm:fixed sm:bottom-[80px] xl:mt-24 sm:w-full xl:p-4 rounded-xl xl:bg-white sm:flex-col sm:bg-magnolia items-center">
           <div className="xl:w-[300px] xl:h-full xl:bg-white bg-no-repeat bg-cover xl:rounded-xl sm:w-full sm:min-h-56 sm:mr-[0px] sm:relative sm:z-2 xl:bg-xl-image sm:bg-sm-image">
             <ul className="flex xl:flex-col list-none xl:p-4 mt-4 sm:w-full sm:justify-center">
               {steps.filter(step => step.id !== 5).map(step => (
@@ -254,8 +254,8 @@ function Form() {
             )}
             
             <div className="w-full">
-              {currentStep === 4 ? <button className="float-right sm:ml-[27px] xl:mt-[6rem] sm:mt-[353px] xl:ml-0 px-8 py-4 font-UbuntuRegular bg-purplish-blue rounded-md text-white" onClick={handleNextStep} disabled={isNextDisabled()}>Confirm</button>
-                : currentStep === 1 || currentStep === 2 || currentStep === 3 ? <button className="float-right sm:ml-[27px] sm:mt-[250px] xl:mt-[6rem] xl:ml-0 px-8 py-4 font-UbuntuRegular bg-marine-blue rounded-md text-white" onClick={handleNextStep} disabled={isNextDisabled()}>Next Step</button> : ""}
+              {currentStep === 4 ? <button className="float-right sm:ml-[27px] xl:mt-[6rem] sm:mt-[83px] xl:ml-0 px-8 py-4 font-UbuntuRegular bg-purplish-blue rounded-md text-white" onClick={handleNextStep} disabled={isNextDisabled()}>Confirm</button>
+                : currentStep === 1 || currentStep === 2 || currentStep === 3 ? <button className="float-right sm:ml-[27px] sm:mt-[75px] xl:mt-[6rem] xl:ml-0 px-8 py-4 font-UbuntuRegular bg-marine-blue rounded-md text-white" onClick={handleNextStep} disabled={isNextDisabled()}>Next Step</button> : ""}
             </div>
             {currentStep > 1 && currentStep < 5 && (
               <div className="w-full">
