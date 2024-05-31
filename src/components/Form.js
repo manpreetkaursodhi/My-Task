@@ -254,8 +254,8 @@ function Form() {
             )}
             
             <div className="w-full">
-              {currentStep === 4 ? <button className="float-right sm:ml-[27px] xl:mt-[6rem] sm:mt-[43px] xl:ml-0 px-8 py-4 font-UbuntuRegular bg-purplish-blue rounded-md text-white" onClick={handleNextStep} disabled={isNextDisabled()}>Confirm</button>
-                : currentStep === 1 || currentStep === 2 || currentStep === 3 ? <button className="float-right sm:ml-[27px] sm:mt-[32px] xl:mt-[6rem] xl:ml-0 px-8 py-4 font-UbuntuRegular bg-marine-blue rounded-md text-white" onClick={handleNextStep} disabled={isNextDisabled()}>Next Step</button> : ""}
+              {currentStep === 4 ? <button className="float-right sm:ml-[27px] xl:mt-[6rem] sm:mt-[30px] xl:ml-0 px-8 py-4 font-UbuntuRegular bg-purplish-blue rounded-md text-white" onClick={handleNextStep} disabled={isNextDisabled()}>Confirm</button>
+                : currentStep === 1 || currentStep === 2 || currentStep === 3 ? <button className="float-right sm:ml-[27px] sm:mt-[25px] xl:mt-[6rem] xl:ml-0 px-8 py-4 font-UbuntuRegular bg-marine-blue rounded-md text-white" onClick={handleNextStep} disabled={isNextDisabled()}>Next Step</button> : ""}
             </div>
             {currentStep > 1 && currentStep < 5 && (
               <div className="w-full">
