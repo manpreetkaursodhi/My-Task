@@ -117,7 +117,7 @@ function Form() {
     <div className="sm:bg-white">
       <div className="flex xl:my-auto xl:items-center xl:justify-center xl:h-screen sm:min-h-20 bg-magnolia">
         <div className="flex xl:flex-row xl:w-3/5 xl:h-3/4 sm:h-[90%] sm:top-0 sm:fixed sm:bottom-[80px] xl:mt-24 sm:w-full xl:p-4 rounded-xl xl:bg-white sm:flex-col sm:bg-magnolia items-center">
-          <div className="xl:w-[300px] xl:h-full xl:bg-white bg-no-repeat bg-cover xl:rounded-xl sm:w-full sm:min-h-56 sm:mr-[0px] sm:relative sm:z-2 xl:bg-xl-image sm:bg-sm-image">
+          <div className="xl:w-[250px] xl:h-full xl:bg-white bg-no-repeat bg-cover xl:rounded-xl sm:w-full sm:min-h-56 sm:mr-[0px] sm:relative sm:z-2 xl:bg-xl-image sm:bg-sm-image">
             <ul className="flex xl:flex-col list-none xl:p-4 mt-4 sm:w-full sm:justify-center">
               {steps.filter(step => step.id !== 5).map(step => (
                 <li key={step.id} className="flex items-center xl:min-w-[144px] mb-4 p-2 sm:flex-row">
