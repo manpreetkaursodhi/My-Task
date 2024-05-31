@@ -5,11 +5,8 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'sm': '375px',
-      // => @media (min-width: 375px) { ... }
-
-      'xl': '960px',
-      // => @media (min-width: 960px) { ... }
+      'sm': '370px',
+      'xl': '950px',}
     },
     extend: {
       backgroundImage: {
