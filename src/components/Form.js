@@ -243,7 +243,7 @@ function Form() {
             {currentStep === 5 && (
               <div className="xl:min-h-[446px] sm:max-h-[415px] sm:mt-[-13px]">
               <div className="flex flex-col items-center justify-center text-center sm:mt-[60px] xl:mt-[200px]">
-                <div className="flex flex-col items-center justify-center w-full">
+                <div className="flex flex-col items-center justify-center w-full sm:mt-[-53px]">
                   <img className="w-20 h-20 text-red-500 mb-6" src={tickIcon} alt="done"/>
                   <h1 className="text-3xl font-UbuntuBold text-marine-blue mt-4 mb-4">Thank You!</h1>
                   <p className="text-xl text-cool-gray font-UbuntuMedium">
