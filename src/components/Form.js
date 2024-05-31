@@ -174,7 +174,7 @@ function Form() {
   return (
     <div className="sm:bg-white">
       <div className="flex xl:my-auto xl:items-center xl:justify-center xl:h-screen sm:min-h-20 bg-magnolia">
-        <div className="flex xl:flex-row xl:w-3/5 sm:max-h-[750px] xl:overflow-hidden sm:overflow-auto xl:h-3/4 sm:h-[100%] sm:top-0 sm:fixed sm:bottom-[80px] xl:mt-24 sm:w-full xl:p-4 rounded-xl xl:bg-white sm:flex-col sm:bg-magnolia items-center">
+        <div className="flex xl:flex-row xl:w-[55%] sm:max-h-[750px] xl:overflow-hidden sm:overflow-auto xl:h-3/4 sm:h-[100%] sm:top-0 sm:fixed sm:bottom-[80px] xl:mt-24 sm:w-full xl:p-4 rounded-xl xl:bg-white sm:flex-col sm:bg-magnolia items-center">
           <div className="xl:w-[250px] xl:h-full xl:bg-white bg-no-repeat bg-cover xl:rounded-xl sm:w-full sm:min-h-56 sm:mr-[0px] sm:relative sm:z-2 xl:bg-xl-image sm:bg-sm-image">
             <ul className="flex xl:flex-col list-none xl:p-4 mt-4 sm:w-full sm:justify-center">
               {steps
